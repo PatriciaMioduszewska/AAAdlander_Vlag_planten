@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AASA Commandocentrum - Vlag planten</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Barlow:600|Rasa:300,500" rel="stylesheet">
+    <link href="logo.png" href="sources">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="app-header">
+    <div class="logo-container">
+        <img src="logo.png" alt="AASA Logo" class="aasa-logo-img">
+        <div class="header-titles">
+            <h1 class="header-main-title">COMMANDOCENTRUM</h1>
+            <h2 class="header-sub-title">Module 4: Vlag Planten</h2>
+        </div>
+    </div>
+
+    </div>
+    <div class="status-badge">
+        Online <!of offline als het connectie doet niet, dan tuurlijk in rood>
+    </div>
+</header>
+
+<main class="dashboard-layout">
+
+    <section class="panel">
+        <h2 class="panel-title">Grafische Besturing</h2>
+        <p class="panel-description">
+            Verstuur acties via Web API commando's naar de AAAdLander module.
+        </p>
+        <div class="controls-grid">
+            <button class="btn btn-primary">
+                <span>1. Afstandssensor Activeren</span>
+            </button>
+            <button class="btn btn-primary">
+                <span>2. Positie correctie (arm)</span>
+            </button>
+            <button class="btn btn-danger">
+                <span>3. Vlag Planten (In Bossche Bol)</span>
+            </button>
+        </div>
+        <div class="arm-controls">
+            <h3 class="controls-subtitle">Handmatige Besturing</h3>
+            <div class="d-pad">
+                <button class="btn-dir up" aria-label="Omhoog">▲</button>
+                <button class="btn-dir left" aria-label="Links">◀</button>
+                <button class="btn-dir right" aria-label="Rechts">▶</button>
+                <button class="btn-dir down" aria-label="Omlaag">▼</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="panel">
+        <h2 class="panel-title">Dashboard Sensordata (Live)</h2>
+        <div class="data-display">
+
+            <div class="main-metric">
+                <span class="metric-label">Actuele Afstand tot Bossche Bol</span>
+                <span class="metric-value">14.2 cm</span>
+            </div>
+
+            <div class="measurements-section">
+                <span class="measurements-label">Vereiste Metingen voor plaatsing:</span>
+                <ul class="measurements-list"> <!live ophalen uit sensor>
+                    <li class="measurement-item active">
+                        <div class="measurement-id">M1</div>
+                        14.5
+                    </li>
+                    <li class="measurement-item active">
+                        <div class="measurement-id">M2</div>
+                        14.3
+                    </li>
+                    <li class="measurement-item active">
+                        <div class="measurement-id">M3</div>
+                        14.2
+                    </li>
+                    <li class="measurement-item">
+                        <div class="measurement-id">M4</div>
+                        --
+                    </li>
+                    <li class="measurement-item">
+                        <div class="measurement-id">M5</div>
+                        --
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="log-console"> <!live ophalen uit sensor/orbiter>
+            <p><span class="log-time">[10:45:01]</span> Systeem geïnitialiseerd. Verbonden via WiFi (AvansWlan).</p>
+            <p><span class="log-time">[10:45:05]</span> NRF24 Transceiver Link OK op 2.4 GHz.</p>
+            <p><span class="log-time">[10:46:12]</span> COMM: Afstandssensor geactiveerd via Web API.</p>
+            <p><span class="log-time">[10:46:13]</span> DATA: Ontvangen meting 1 via WebSocket (14.5 cm).</p>
+            <p><span class="log-time">[10:46:14]</span> DATA: Ontvangen meting 2 via WebSocket (14.3 cm).</p>
+            <p><span class="log-time">[10:46:15]</span> DATA: Ontvangen meting 3 via WebSocket (14.2 cm).</p>
+            <p><span class="log-time">[10:46:15]</span> Wachten op resterende metingen voor plant-commando...</p>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>
