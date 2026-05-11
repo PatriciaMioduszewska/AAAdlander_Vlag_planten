@@ -88,7 +88,7 @@ h1, h2, h3, p {
 /* Layout & Panelen*/
 .dashboard-layout {
     display: grid;
-    grid-template-columns: 2fr 1fr; 
+    grid-template-columns: 1fr 2fr;
     gap: 25px;
     padding: 30px;
     flex-grow: 1;
@@ -129,17 +129,15 @@ h1, h2, h3, p {
 .btn {
     background: transparent;
     padding: 15px 20px;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
-   
     display: flex;
-    justify-content: center; 
+    justify-content: space-between;
     align-items: center;
 }
 
