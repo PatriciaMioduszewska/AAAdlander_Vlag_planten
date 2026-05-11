@@ -27,87 +27,84 @@
 </header>
 
 <main class="dashboard-layout">
-        
-        <section class="panel">
-            <h2 class="panel-title">Dashboard Sensordata (Live)</h2>
-            <div class="data-display">
-                
-                <div class="main-metric">
-                    <span class="metric-label">Actuele Afstand tot Bossche Bol</span>
-                    <span class="metric-value">14.2 cm</span>
-                </div>
 
-                <div class="measurements-section">
-                    <span class="measurements-label">Vereiste Metingen (5x) voor plaatsing:</span>
-                    <ul class="measurements-list">
-                        <li class="measurement-item active">
-                            <div class="measurement-id">M1</div>
-                            14.5
-                        </li>
-                        <li class="measurement-item active">
-                            <div class="measurement-id">M2</div>
-                            14.3
-                        </li>
-                        <li class="measurement-item active">
-                            <div class="measurement-id">M3</div>
-                            14.2
-                        </li>
-                        <li class="measurement-item">
-                            <div class="measurement-id">M4</div>
-                            --
-                        </li>
-                        <li class="measurement-item">
-                            <div class="measurement-id">M5</div>
-                            --
-                        </li>
-                    </ul>
-                </div>
+    <section class="panel">
+        <h2 class="panel-title">Dashboard Sensordata (Live)</h2>
+        <div class="data-display">
 
+            <div class="main-metric">
+                <span class="metric-label">Actuele Afstand tot Bossche Bol</span>
+                <span class="metric-value">14.2 cm</span>
             </div>
 
-            <div class="log-console">
-                <p><span class="log-time">[10:45:01]</span> Systeem geïnitialiseerd. Verbonden via WiFi (AvansWlan).</p>
-                <p><span class="log-time">[10:45:05]</span> NRF24 Transceiver Link OK op 2.4 GHz.</p>
-                <p><span class="log-time">[10:46:12]</span> COMM: Afstandssensor geactiveerd via Web API.</p>
-                <p><span class="log-time">[10:46:13]</span> DATA: Ontvangen meting 1 via WebSocket (14.5 cm).</p>
-                <p><span class="log-time">[10:46:14]</span> DATA: Ontvangen meting 2 via WebSocket (14.3 cm).</p>
-                <p><span class="log-time">[10:46:15]</span> DATA: Ontvangen meting 3 via WebSocket (14.2 cm).</p>
-                <p><span class="log-time">[10:46:15]</span> Wachten op resterende metingen voor plant-commando...</p>
-            </div>
-        </section>
-
-        <section class="panel">
-            <h2 class="panel-title">Grafische Besturing</h2>
-            <p class="panel-description">
-                Verstuur acties via Web API commando's naar de AAAdLander module.
-            </p>
-            <div class="controls-grid">
-                <button class="btn btn-primary">
-                    <span>1. Afstandssensor Activeren</span>
-                    <span aria-hidden="true">📡</span>
-                </button>
-                <button class="btn btn-primary">
-                    <span>2. Arm Kalibreren</span>
-                    <span aria-hidden="true">⚙️</span>
-                </button>
-                <button class="btn btn-danger">
-                    <span>3. Vlag Planten (In Bossche Bol)</span>
-                    <span aria-hidden="true">🚩</span>
-                </button>
+            <div class="measurements-section">
+                <span class="measurements-label">Vereiste Metingen (5x) voor plaatsing:</span>
+                <ul class="measurements-list">
+                    <li class="measurement-item active">
+                        <div class="measurement-id">M1</div>
+                        14.5
+                    </li>
+                    <li class="measurement-item active">
+                        <div class="measurement-id">M2</div>
+                        14.3
+                    </li>
+                    <li class="measurement-item active">
+                        <div class="measurement-id">M3</div>
+                        14.2
+                    </li>
+                    <li class="measurement-item">
+                        <div class="measurement-id">M4</div>
+                        --
+                    </li>
+                    <li class="measurement-item">
+                        <div class="measurement-id">M5</div>
+                        --
+                    </li>
+                </ul>
             </div>
 
-            <div class="arm-controls">
-                <h3 class="controls-subtitle">Handmatige Besturing</h3>
-                <div class="d-pad">
-                    <button class="btn-dir up" aria-label="Omhoog">▲</button>
-                    <button class="btn-dir left" aria-label="Links">◀</button>
-                    <button class="btn-dir right" aria-label="Rechts">▶</button>
-                    <button class="btn-dir down" aria-label="Omlaag">▼</button>
-                </div>
-            </div>
-        </section>
+        </div>
 
-    </main>
+        <div class="log-console">
+            <p><span class="log-time">[10:45:01]</span> Systeem geïnitialiseerd. Verbonden via WiFi (AvansWlan).</p>
+            <p><span class="log-time">[10:45:05]</span> NRF24 Transceiver Link OK op 2.4 GHz.</p>
+            <p><span class="log-time">[10:46:12]</span> COMM: Afstandssensor geactiveerd via Web API.</p>
+            <p><span class="log-time">[10:46:13]</span> DATA: Ontvangen meting 1 via WebSocket (14.5 cm).</p>
+            <p><span class="log-time">[10:46:14]</span> DATA: Ontvangen meting 2 via WebSocket (14.3 cm).</p>
+            <p><span class="log-time">[10:46:15]</span> DATA: Ontvangen meting 3 via WebSocket (14.2 cm).</p>
+            <p><span class="log-time">[10:46:15]</span> Wachten op resterende metingen voor plant-commando...</p>
+        </div>
+    </section>
+
+    <section class="panel">
+        <h2 class="panel-title">Grafische Besturing</h2>
+        <p class="panel-description">
+            Verstuur acties via Web API commando's naar de AAAdLander module.
+        </p>
+        <div class="controls-grid">
+            <button class="btn btn-primary">
+                <span>1. Afstandssensor Activeren</span>
+            </button>
+            <button class="btn btn-primary">
+                <span>2. Arm Kalibreren</span>
+            </button>
+            <button class="btn btn-danger">
+                <span>3. Vlag Planten (In Bossche Bol)</span>
+            </button>
+        </div>
+
+        <div class="arm-controls">
+            <h3 class="controls-subtitle">Handmatige Besturing</h3>
+            <div class="d-pad">
+                <button class="btn-dir up" aria-label="Omhoog">▲</button>
+                <button class="btn-dir left" aria-label="Links">◀</button>
+                <button class="btn-dir right" aria-label="Rechts">▶</button>
+                <button class="btn-dir down" aria-label="Omlaag">▼</button>
+            </div>
+        </div>
+    </section>
+
+</main>
 
 </body>
 </html>
