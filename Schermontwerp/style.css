@@ -2,7 +2,7 @@
     --space-bg: #b66681;
     --panel-bg: rgb(255, 199, 225);
     --primary-accent: #e23485;
-    --secondary-accent: #fa3778;
+    --secondary-accent: #e23485;
     --success-color: #00ff6a;
     --text-main: #d55d8d;
     --text-muted: #da3a7a;
@@ -88,7 +88,7 @@ h1, h2, h3, p {
 /* Layout & Panelen*/
 .dashboard-layout {
     display: grid;
-    grid-template-columns: 2fr 1fr; 
+    grid-template-columns: 2fr 1fr;
     gap: 25px;
     padding: 30px;
     flex-grow: 1;
@@ -137,9 +137,10 @@ h1, h2, h3, p {
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
-   
+
+
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
 
@@ -302,7 +303,7 @@ h1, h2, h3, p {
 }
 
 .btn-dir:hover {
-    background: rgba(0, 240, 255, 0.15);
+    background: rgb(246, 162, 199);
     box-shadow: var(--border-glow);
     transform: scale(1.05);
 }
