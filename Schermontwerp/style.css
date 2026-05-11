@@ -1,14 +1,26 @@
 :root {
-    --space-bg: #b66681;
+   /* --space-bg: #b66681;
     --panel-bg: rgb(255, 199, 225);
     --primary-accent: #e23485;
-    --secondary-accent: #fa3778;
+    --secondary-accent: #e23485;
     --success-color: #00ff6a;
     --text-main: #d55d8d;
     --text-muted: #da3a7a;
     --border-glow: 0 0 10px rgb(242, 97, 165);
     --danger-glow: 0 0 10px rgba(255, 0, 60, 0.3);
     --success-glow: 0 0 8px rgba(0, 255, 106, 0.6);
+    --default-log: white; */
+    --space-bg: #8e405a;
+    --panel-bg: #fff0f5;
+    --primary-accent: #c2185b;
+    --secondary-accent: #d81b60;
+    --success-color: #00c853;
+    --text-main: #3a081b;
+    --text-muted: #731e3b;
+    --border-glow: 0 0 10px rgba(194, 24, 91, 0.3);
+    --danger-glow: 0 0 10px rgba(216, 27, 96, 0.3);
+    --success-glow: 0 0 8px rgba(0, 200, 83, 0.5);
+    --default-log: #ffffff;
 }
 
 /* Basis Reset & Typografie*/
@@ -88,7 +100,7 @@ h1, h2, h3, p {
 /* Layout & Panelen*/
 .dashboard-layout {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     gap: 25px;
     padding: 30px;
     flex-grow: 1;
@@ -138,10 +150,10 @@ h1, h2, h3, p {
     cursor: pointer;
     transition: all 0.3s ease;
 
+
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
 }
 
 .btn-primary {
@@ -172,7 +184,7 @@ h1, h2, h3, p {
 }
 
 .main-metric {
-    background: rgb(223, 193, 203);
+    background: rgb(255, 200, 222);
     border: 1px dashed var(--text-muted);
     padding: 30px;
     text-align: center;
@@ -240,14 +252,14 @@ h1, h2, h3, p {
 /* Log Console Component*/
 .log-console {
     margin-top: 25px;
-    background: #412722;
-    border: 1px solid #333;
+    background: #d55081;
+    border: 1px solid #da3a7a;
     padding: 15px;
     height: 160px;
     overflow-y: auto;
     font-family: 'Courier New', Courier, monospace;
     font-size: 13px;
-    color: var(--success-color);
+    color: var(--default-log);
     border-radius: 4px;
 }
 
@@ -256,7 +268,7 @@ h1, h2, h3, p {
 }
 
 .log-time {
-    color: var(--text-muted);
+    color: var(--default-log) ;
     margin-right: 10px;
 }
 
@@ -303,7 +315,7 @@ h1, h2, h3, p {
 }
 
 .btn-dir:hover {
-    background: rgba(0, 240, 255, 0.15);
+    background: rgb(246, 162, 199);
     box-shadow: var(--border-glow);
     transform: scale(1.05);
 }
