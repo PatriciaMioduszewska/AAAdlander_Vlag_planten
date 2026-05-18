@@ -58,7 +58,7 @@ h1, h2, h3, p {
 }
 
 .aasa-logo-img {
-    height: 45px;
+    height: 65px;
     width: auto;
     object-fit: contain;
 }
@@ -249,7 +249,7 @@ h1, h2, h3, p {
     color: var(--primary-accent);
 }
 
-/* Log Console Component*/
+/* Log Console Component
 .log-console {
     margin-top: 25px;
     background: #d55081;
@@ -270,6 +270,22 @@ h1, h2, h3, p {
 .log-time {
     color: var(--default-log) ;
     margin-right: 10px;
+}
+*/
+
+/* Styling for the bottom-left solid square */
+.bottom-left-square {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+
+    width: 400px;
+    height: 400px;
+
+    background-color: #d88fa4;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
 }
 
 /* Handmatige Besturing*/
